@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Unidad 3 | Calculadora</title>
+<meta charset="utf-8">
+<meta charset="viewport" content="width=devise-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="Portafolio Java Script">
+<meta charset="author" content="Fani Melendez">
+<meta name="keywords" content="Programacion Web">  
+
+<style>
+body {
+	background-image:url(https://wallpaperboat.com/wp-content/uploads/2020/06/08/44326/aesthetic-flower-13.jpg);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+</style>
+
+<link href="estilo/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="estilo/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<div class="col-sm-9 offset-1 col-md-9">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+          <a class="nav-link active" href="index.html">Index</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="lectura.html">Lectura</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="practica1.html">Practica 1°</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="practica2.html">Practica 2°</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="practica3.html">Practica 3°</a>
+      </li>
+    </ul>
+  </div>
+
+<div class="calcular">
+	<h1>Calculadora JavaScript</h1> 
+  <button type="button" class="btn btn-block" style="background-color: #B0C4DE"><h6>En esta pagina se muestra una calculadora con sus funciones mas basicas como lo es, sumar, restar, dividir y multiplicar.</button></h6>
+  <br>
+	<style>
+		.calcular h1{
+			text-align:center;
+			margin:20px 015px 0;
+			font-weight: 300;
+			font-family: 'open sans ';
+		}
+	</style>
+	<div class="linea"></div>
+	<style>
+		.linea{
+			border-top: 7px solid #4682B4;
+		}
+	</style>
+	<div class="contenedor-imagenes">
+		<style>
+		.contenedor-imagenes{
+			display:flex;
+			width:85%;
+			margin:auto;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			border-radius: 3px;
+		}
+	</style>
+</div>
+</div>
+
+<div class="col-sm-12 col-md-12">
+              <div class="row">
+                  <span class="border border-dark col-sm-12 col-md-12"><br>
+	                    <div id="card" class="card mb-4 offset-3" style="max-width: 640px;">
+                          <div class="row no gutters">
+    	                      <div class="col-md-4">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">         
+                    <br>
+                    <input type="text" id="n1" placeholder="numero 1">
+                    <br>
+                    <br>
+                    <input type="text" id="n2" placeholder="numero 2"></div>
+                    <button id="suma" class="btn btn-primary">+</button>
+                    <button id="resta" class="btn btn-success">-</button>
+                    <button id="multiplicacion" class="btn btn-danger">*</button>
+                    <button id="division" class="btn btn-warning">/</button>                    
+                    <br>
+                    <br>
+                    <button id="calcular" class="btn btn-outline-dark" >Calcular</button>
+                    <br>
+                    <output id="r"></output> 
+
+
+
+<script>
+    let op;
+    document.querySelector('#suma').addEventListener('click', () =>{
+        op = '+';
+    });
+    document.querySelector('#resta').addEventListener('click', () =>{
+        op = '-';
+    });
+    document.querySelector('#multiplicacion').addEventListener('click', () =>{
+        op = '*';
+    });
+    document.querySelector('#division').addEventListener('click', () =>{
+        op = '/';
+    });
+
+    document.querySelector('#calcular').addEventListener('click', () =>{
+        const n1 = parseInt(document.querySelector('#n1').value);
+        const n2 = parseInt(document.querySelector('#n2').value);
+        var reset = document.getElementById('reset');
+
+        let resultado;
+        if(op == '+'){
+          r = n1 + n2;
+        }else if( op == '-'){
+            r = n1 - n2;
+        }else if(op == '*'){
+            r = n1 * n2;
+        }else if(op == '/'){
+            r = n1 / n2;
+        }
+        document.querySelector('#r').innerHTML = r;
+    });
+
+
+</script>
+</div>
+</div>
+</div>
+  <div class="linea"></div>
+  <style>
+    .linea{
+      border-top: 7px solid #4682B4;
+    }
+  </style>
+</span>
+
+<br>
+<br>
